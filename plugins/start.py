@@ -89,7 +89,7 @@ async def start_command(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(" ⚡️ About Me", callback_data = "about"),
-                    InlineKeyboardButton(" 👩‍💻 Dev', url='https://t.me/actanibot?start=start')
+                    InlineKeyboardButton(' 👩‍💻 Dev', url='https://t.me/actanibot?start=start')
                 ]
             ]
         )
