@@ -88,8 +88,8 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(" About Me", callback_data = "about"),
-                    InlineKeyboardButton(" Close", callback_data = "close")
+                    InlineKeyboardButton(" ⚡️ About Me", callback_data = "about"),
+                    InlineKeyboardButton(" 👩‍💻 Dev', url='https://t.me/actanibot?start=start')
                 ]
             ]
         )
@@ -123,7 +123,7 @@ async def not_joined(client: Client, message: Message):
     buttons = [
         [
             InlineKeyboardButton(
-                "Join Channel",
+                "• ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ ဝင်ပါ",
                 url = client.invitelink)
         ]
     ]
@@ -131,7 +131,7 @@ async def not_joined(client: Client, message: Message):
         buttons.append(
             [
                 InlineKeyboardButton(
-                    text = 'Try Again ကိုနှိပ်ပါ',
+                    text = 'အပေါ်က Channel ဝင်ပါ • ဝင်ပြီးရင်ဒီမှာနှိပ်ပါ',
                     url = f"https://t.me/{client.username}?start={message.command[1]}"
                 )
             ]
